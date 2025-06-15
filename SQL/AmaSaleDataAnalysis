@@ -1,10 +1,13 @@
-for this claning we would be using postgresql. this script is used to create a table for analyzing Amazon sales data. the illustrations here is to help us tract our sales data effectively by storing relevant information such as order ID, date, product details, pricing, quantity sold, total sales amount, customer information, payment method, and order status.
+For this claning we would be using postgresql. this script is used to create a table for analyzing Amazon sales data. the illustrations here is to help us trace our sales data effectively by storing relevant information such as order ID, date, product details, pricing, quantity sold, total sales amount, customer information, payment method, and order status.
 
 -- Drop the table if it already exists to avoid errors on creation
+
 DROP TABLE IF EXISTS public."AmaSales";
 
-we used postgresql to create a table for analyzing Amazon sales data.
+create a table for analyzing Amazon sales data.
+
 -- This script creates a table named "AmaSales" with various columns to store sales data.
+
 CREATE TABLE public."AmaSales"
 (
     "Order_Id" text NOT NULL,
@@ -27,9 +30,10 @@ ALTER TABLE IF EXISTS public."AmaSales"
     OWNER to postgres;
 
 -- The table is now ready for use, and you can insert data into it as needed.
--- You can use the following command to insert data into the table:
+-- You can use the following command to insert data into the table
+
 -- INSERT INTO public."AmaSales" ("Order_Id", "Date", "Product", "Category", "Price", "Quantity", "Total_Sales", "Customer_Name", "Customer_Location", "Payment_Method", "Status") for me i would be using a csv file to import data into the table.
--- Example of inserting data (uncomment and modify as needed):      
+
 
 --to see table structure and data, you can run:
 SELECT * FROM public."AmaSales"
